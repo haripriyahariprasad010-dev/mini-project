@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+   ===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #222;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    background-color: #f4f6f8;
+}
+
+
+/* =====================================
+   DASHBOARD HEADER
+   ===================================== */
+
+.dashboard-header {
+    text-align: center;
+
+    padding: 22px 20px;
+
+    background-color: #1f3c5b;
+
+    color: white;
+}
+
+
+.dashboard-header h1 {
+    font-size: 30px;
+
+    margin-bottom: 7px;
+}
+
+
+.dashboard-header p {
+    font-size: 15px;
+}
+
+
+/* =====================================
+   NAVIGATION
+   ===================================== */
+
+.navbar {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    background-color: #162d45;
+}
+
+
+.nav-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.nav-link:hover {
+    background-color: #2f5d82;
+}
+
+
+.nav-link.active {
+    background-color: #2f5d82;
+}
+
+
+/* Logout */
+
+.nav-link.logout {
+    background-color: #8b2e2e;
+}
+
+
+.nav-link.logout:hover {
+    background-color: #b33a3a;
+}
+
+
+/* =====================================
+   DASHBOARD CONTAINER
+   ===================================== */
+
+.dashboard-container {
+    min-height: 70vh;
+
+    padding: 40px 50px;
+
+    background-color: #f4f6f8;
+}
+
+
+/* =====================================
+   DASHBOARD TITLE
+   ===================================== */
+
+.dashboard-title {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.dashboard-title .small-title {
+    color: #2f5d82;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.dashboard-title h2 {
+    color: #1f3c5b;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.dashboard-title > p:last-child {
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   SUMMARY CARDS
+   ===================================== */
+
+.summary-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+.summary-card {
+    min-height: 165px;
+
+    padding: 25px 20px;
+
+    background-color: white;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e6e9;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.summary-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.dashboard-emoji {
+    font-size: 34px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================
+   CARD HEADING
+   ===================================== */
+
+.summary-card h3 {
+    color: #555;
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   CARD NUMBER
+   ===================================== */
+
+.summary-card p {
+    color: #1f3c5b;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   MOST ISSUED BOOKS
+   ===================================== */
+
+.most-issued {
+    max-width: 900px;
+
+    margin: 35px auto 0;
+
+    padding: 25px 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e6e9;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.most-issued h3 {
+    color: #1f3c5b;
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+
+.section-description {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   BOOK ITEM
+   ===================================== */
+
+.book-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 5px;
+
+    border-bottom:
+        1px solid #eeeeee;
+}
+
+
+.book-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Book number */
+
+.book-number {
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #e7f0f7;
+
+    color: #1f3c5b;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+/* Book information */
+
+.book-info {
+    flex: 1;
+}
+
+
+.book-info h4 {
+    color: #333;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+
+.book-info p {
+    color: #888;
+
+    font-size: 11px;
+}
+
+
+/* Issued count */
+
+.issued-count {
+    color: #2f5d82;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   MODULE CONTENT
+   ===================================== */
+
+.module-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #e2e6e9;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.module-content h2 {
+    color: #1f3c5b;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+.module-content p {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+footer {
+    text-align: center;
+
+    padding: 15px;
+
+    background-color: #1f3c5b;
+
+    color: white;
+}
+
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 1000px) {
+
+    .summary-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        padding: 30px 15px;
+    }
+
+
+    .dashboard-title h2 {
+        font-size: 29px;
+    }
+
+
+    .navbar {
+        gap: 5px;
+
+        padding: 10px;
+    }
+
+
+    .nav-link {
+        padding: 9px 11px;
+
+        font-size: 13px;
+    }
+
+
+    .summary-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .summary-card {
+        min-height: 160px;
+    }
+
+
+    .most-issued {
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .summary-card {
+        width: 100%;
+
+        max-width: 300px;
+
+        margin: 0 auto;
+    }
+
+
+    .dashboard-title h2 {
+        font-size: 25px;
+    }
+
+
+    .book-item {
+        gap: 10px;
+    }
+
+
+    .issued-count {
+        font-size: 10px;
+    }
+
+
+    .module-content {
+        padding: 25px 20px;
+    }
+
+
+    .dashboard-header h1 {
+        font-size: 23px;
+    }
+
+}

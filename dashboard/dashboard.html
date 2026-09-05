@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Digital Library</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================
+         HEADER
+         ===================================== -->
+
+    <header class="dashboard-header">
+
+        <h1>
+            📚 Digital Library Management System
+        </h1>
+
+        <p>
+            Library Dashboard
+        </p>
+
+    </header>
+
+
+    <!-- =====================================
+         NAVIGATION MENU
+         ===================================== -->
+
+    <nav class="navbar">
+
+
+        <a href="#"
+           class="nav-link active"
+           data-section="dashboard">
+
+            🏠 Dashboard
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="books">
+
+            📚 Books
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="members">
+
+            👥 Members
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="issue">
+
+            📖 Issue Book
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="return">
+
+            ↩️ Return Book
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="reports">
+
+            📊 Reports
+
+        </a>
+
+
+        <a href="#"
+           class="nav-link"
+           data-section="about">
+
+            ℹ️ About
+
+        </a>
+
+
+        <a href="../index.html"
+           class="nav-link logout">
+
+            🚪 Logout
+
+        </a>
+
+    </nav>
+
+    <main class="dashboard-container">
+
+
+        <div id="dashboardContent">
+
+            <div class="dashboard-title">
+
+                <p class="small-title">
+                    📋 LIBRARY OVERVIEW
+                </p>
+
+                <h2>
+                    Welcome to the Dashboard
+                </h2>
+
+                <p>
+                    Manage your digital library from one place.
+                </p>
+
+            </div>
+
+
+
+            <div class="summary-cards">
+
+
+                <!-- Total Books -->
+
+                <div class="summary-card">
+
+                    <div class="dashboard-emoji">
+                        📚
+                    </div>
+
+                    <h3>
+                        Total Books
+                    </h3>
+
+                    <p>
+                        250
+                    </p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <div class="dashboard-emoji">
+                        👥
+                    </div>
+
+                    <h3>
+                        Total Members
+                    </h3>
+
+                    <p>
+                        120
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="dashboard-emoji">
+                        📖
+                    </div>
+
+                    <h3>
+                        Issued Books
+                    </h3>
+
+                    <p>
+                        35
+                    </p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <div class="dashboard-emoji">
+                        ✅
+                    </div>
+
+                    <h3>
+                        Returned Books
+                    </h3>
+
+                    <p>
+                        215
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="most-issued">
+
+
+                <h3>
+                    📚 Most Issued Books
+                </h3>
+
+
+                <p class="section-description">
+                    Popular books among library members
+                </p>
+
+                <div class="book-item">
+
+                    <div class="book-number">
+                        1
+                    </div>
+
+                    <div class="book-info">
+
+                        <h4>
+                            The Alchemist
+                        </h4>
+
+                        <p>
+                            Paulo Coelho
+                        </p>
+
+                    </div>
+
+                    <div class="issued-count">
+                        18 issued
+                    </div>
+
+                </div>
+
+
+                <div class="book-item">
+
+                    <div class="book-number">
+                        2
+                    </div>
+
+                    <div class="book-info">
+
+                        <h4>
+                            Atomic Habits
+                        </h4>
+
+                        <p>
+                            James Clear
+                        </p>
+
+                    </div>
+
+                    <div class="issued-count">
+                        15 issued
+                    </div>
+
+                </div>
+
+                <div class="book-item">
+
+                    <div class="book-number">
+                        3
+                    </div>
+
+                    <div class="book-info">
+
+                        <h4>
+                            Rich Dad Poor Dad
+                        </h4>
+
+                        <p>
+                            Robert Kiyosaki
+                        </p>
+
+                    </div>
+
+                    <div class="issued-count">
+                        12 issued
+                    </div>
+
+                </div>
+
+                <div class="book-item">
+
+                    <div class="book-number">
+                        4
+                    </div>
+
+                    <div class="book-info">
+
+                        <h4>
+                            Clean Code
+                        </h4>
+
+                        <p>
+                            Robert C. Martin
+                        </p>
+
+                    </div>
+
+                    <div class="issued-count">
+                        9 issued
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            📚 &copy; 2026 Digital Library Management System
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

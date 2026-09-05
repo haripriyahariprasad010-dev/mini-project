@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Digital Library</title>
+
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>
+            Digital Library Management System
+        </h1>
+
+        <p>
+            Create your library account
+        </p>
+
+    </header>
+
+
+    <!-- Registration -->
+
+    <main class="login-section">
+
+        <div class="login-box">
+
+            <h2>
+                Create Account
+            </h2>
+
+            <p class="form-text">
+                Register to use the digital library
+            </p>
+
+
+            <form id="registerForm">
+
+
+                <!-- USERNAME -->
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    autocomplete="username"
+                >
+
+                <p
+                    id="registerUsernameError"
+                    class="input-error">
+                </p>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                >
+
+                <p
+                    id="emailError"
+                    class="input-error">
+                </p>
+
+
+                <!-- PHONE -->
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter 10 digit phone number"
+                    maxlength="10"
+                    inputmode="numeric"
+                >
+
+                <p
+                    id="phoneError"
+                    class="input-error">
+                </p>
+
+
+                <!-- PASSWORD -->
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Exactly 8 characters"
+                    maxlength="8"
+                    autocomplete="new-password"
+                >
+
+                <p
+                    id="registerPasswordError"
+                    class="input-error">
+                </p>
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    maxlength="8"
+                    autocomplete="new-password"
+                >
+
+                <p
+                    id="confirmPasswordError"
+                    class="input-error">
+                </p>
+
+
+                <!-- BUTTONS -->
+
+                <div class="button-group">
+
+                    <button type="submit">
+                        Register
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset-button">
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+
+                <!-- SUCCESS MESSAGE -->
+
+                <p
+                    id="registerMessage"
+                    class="success-message">
+                </p>
+
+
+                <!-- LOGIN LINK -->
+
+                <p class="register-link">
+
+                    Already have an account?
+
+                    <a href="../login/login.html">
+    Login
+</a>
+
+                </p>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Digital Library Management System
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>
