@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title> Dashboard - Digital Library</title>
+    <link rel="stylesheet"href="dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>📚 Digital Library Management System</h1>
+        <p>Library Dashboard</p>
+    </header>
+    <nav class="navbar">
+        <a href="#" class="nav-link active" data-section="dashboard"> 🏠 Dashboard</a>
+        <a href="../books/books.html" class="nav-link">📚 Books</a>
+        <a href="../members/members.html" class="nav-link">👥 Members</a>
+        <a href="../collections/collection.html" class="nav-link">🗂️ Collections</a>
+        <a href="../issue/issue.html" class="nav-link" data-section="issue">📖 Issue Book</a>
+        <a href="../return/return.html" class="nav-link" data-section="return">  ↩️ Return Book</a>
+        <a href="../reports/reports.html" class="nav-link" data-section="reports"> 📊 Reports</a>
+        <a href="../about/about.html" class="nav-link" data-section="about"> ℹ️ About</a>
+        <a href="../index.html" class="nav-link logout"> 🚪 Logout</a>
+        
+    </nav>
+    <main class="dashboard-container">
+        <div id="dashboardContent">
+            <div class="dashboard-title">
+                <p class="small-title">
+                    📋 LIBRARY OVERVIEW
+                </p>
+                <h2>
+                    Welcome to the Dashboard
+                </h2>
+                <p>Manage your digital library from one place.</p>
+            </div>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="dashboard-emoji">
+                        📚
+                    </div>
+                    <h3>
+                        Total Books
+                    </h3>
+                    <p id="totalBooks">
+                        0
+                    </p>
+                </div>
+                <div class="summary-card">
+                    <div class="dashboard-emoji">
+                        👥
+                    </div>
+                    <h3>
+                        Total Members
+                    </h3>
+                    <p id="totalMembers">
+                        0
+                    </p>
+                </div>
+                <div class="summary-card">
+                    <div class="dashboard-emoji">
+                        📖
+                    </div>
+                    <h3>
+                        Issued Books
+                    </h3>
+                    <p id="issuedBooks">0</p>
+                </div>
+                <div class="summary-card">
+                    <div class="dashboard-emoji">✅
+                    </div>
+                    <h3> Returned Books</h3>
+                    <p id="returnedBooks"> 0</p>
+                </div>
+            </div>
+            <section class="recommended-section">
+    <div class="section-heading">
+        <div>
+            <p class="small-title">A LITTLE INSPIRATION</p>
+            <h3>Recommended Books</h3>
+            <p class="section-description">
+                A selection of books worth exploring
+            </p>
+        </div>
+        <span class="recommend-label">Editor's Picks</span>
+    </div>
+
+    <div id="recommendedBooks" class="recommended-books">
+        <p>No recommendations available yet.</p>
+    </div>
+</section>
+            <div class="dashboard-bottom">
+                <div class="most-issued">
+                    <h3> 📚 Most Issued Books</h3>
+                    <p class="section-description"> Popular books among library members
+                    </p>
+                    <div id="mostIssuedBooks">
+                        <p>  No issued books yet.</p>
+                    </div>
+                </div>
+                <div class="most-issued">
+                    <h3>🆕 Recently Added Books</h3>
+                    <p class="section-description"> Latest books added to the library</p>
+                    <div id="recentBooks">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>📚 &copy; 2026 Digital Library Management System</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

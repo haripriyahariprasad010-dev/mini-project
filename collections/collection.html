@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collections - Digital Library</title>
+    <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Digital Library Management System</h1>
+        <p>Explore Our Book Collections</p>
+    </header>
+
+    <main>
+        <div class="collection-container">
+
+            <div class="collection-layout">
+
+                <!-- LEFT SIDE: BOOK GALLERY -->
+
+                <section class="gallery-section">
+
+                    <div class="gallery-top">
+                        <div>
+                            <span class="eyebrow">DISCOVER YOUR NEXT READ</span>
+                            <h2>Explore the Library</h2>
+                            <p>Find your next favourite book.</p>
+                        </div>
+
+                        <div class="search-box">
+                            <input
+                                type="text"
+                                id="searchBooks"
+                                placeholder="Search books or authors..."
+                            >
+                            <span>⌕</span>
+                        </div>
+                    </div>
+
+                    <!-- Category Tabs -->
+
+                    <div class="category-tabs" id="categoryTabs"></div>
+
+                    <!-- Book Gallery -->
+
+                    <div class="gallery-heading">
+                        <h3 id="galleryTitle">All Books</h3>
+                        <span id="bookCount"></span>
+                    </div>
+
+                    <div class="book-grid" id="collectionList"></div>
+
+                    <div class="back-container">
+                        <a href="../dashboard/dashboard.html" class="back-button">
+                            ← Back to Dashboard
+                        </a>
+                    </div>
+
+                </section>
+
+                <!-- RIGHT SIDE: BOOK DETAILS -->
+
+                <aside class="book-details-panel" id="bookDetailsPanel" hidden></aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Digital Library Management System</p>
+    </footer>
+
+    <script src="collection.js"></script>
+</body>
+</html>

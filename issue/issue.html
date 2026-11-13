@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book - Digital Library</title>
+    <link rel="stylesheet" href="issue.css">
+    <script src="issue.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">DIGITAL LIBRARY MANAGEMENT</p>
+                <h1>Issue a Book</h1>
+                <p class="subtitle">Assign books to registered library members.</p>
+            </div>
+            <a class="back-link" href="../dashboard/dashboard.html">
+                ← Dashboard
+            </a>
+        </header>
+
+        <section class="form-card">
+            <h2>Issue Details</h2>
+
+            <form id="issueForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="memberSelect">Select Member</label>
+                        <select id="memberSelect" required>
+                            <option value="">Choose a member</option>
+                        </select>
+                        <small id="memberInfo"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookSelect">Select Book</label>
+                        <select id="bookSelect" required>
+                            <option value="">Choose a book</option>
+                        </select>
+                        <small id="bookInfo"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issueDate">Issue Date</label>
+                        <input type="date" id="issueDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="returnDate">Due Date</label>
+                        <input type="date" id="returnDate" required>
+                    </div>
+                </div>
+
+                <p id="issueMessage" role="status"></p>
+                <button type="submit" class="primary-btn">Issue Book</button>
+            </form>
+        </section>
+
+        <section class="table-card">
+            <div class="table-heading">
+                <div>
+                    <h2>Issue Records</h2>
+                    <p>Recently issued books and their due dates.</p>
+                </div>
+                <span id="recordCount" class="count">0 records</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue ID</th>
+                            <th>Member</th>
+                            <th>Book</th>
+                            <th>Issue Date</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="issueTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Reports</title>
+    <link rel="stylesheet" href="reports.css">
+    <script src="reports.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Library Reports</h1>
+        <p>Track your library's issues, returns and activity</p>
+        <a href="../dashboard/dashboard.html">← Back to Dashboard</a>
+    </header>
+
+    <main>
+
+        <!-- SUMMARY CARDS -->
+        <section class="summary-grid">
+
+            <div class="summary-card">
+                <h3>Total Book Titles</h3>
+                <p id="totalTitles">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Available Copies</h3>
+                <p id="totalCopies">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Total Members</h3>
+                <p id="totalMembers">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Currently Issued</h3>
+                <p id="issuedBooks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Total Returned</h3>
+                <p id="returnedBooks">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Overdue Books</h3>
+                <p id="overdueBooks">0</p>
+            </div>
+
+        </section>
+
+        <!-- WEEKLY ISSUE GRAPH -->
+        <section class="report-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Weekly Book Issue Report</h2>
+                    <p>Number of books issued each day this week</p>
+                </div>
+            </div>
+
+            <div class="chart-legend">
+                <span class="legend-dot issue-dot"></span>
+                Books Issued
+            </div>
+
+            <div id="issueChart" class="weekly-chart"></div>
+
+            <p id="issueWeeklyTotal" class="weekly-total">
+                Total issued this week: 0
+            </p>
+
+        </section>
+
+        <!-- WEEKLY RETURN GRAPH -->
+        <section class="report-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Weekly Book Return Report</h2>
+                    <p>Number of books returned each day this week</p>
+                </div>
+            </div>
+
+            <div class="chart-legend">
+                <span class="legend-dot return-dot"></span>
+                Books Returned
+            </div>
+
+            <div id="returnChart" class="weekly-chart"></div>
+
+            <p id="returnWeeklyTotal" class="weekly-total">
+                Total returned this week: 0
+            </p>
+
+        </section>
+
+        <!-- ISSUE HISTORY -->
+        <section class="report-section">
+
+            <div class="section-heading">
+                <h2>Issue and Return History</h2>
+
+                <button type="button" id="exportButton">
+                    Export CSV
+                </button>
+            </div>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search member, book or issue ID"
+                >
+
+                <select id="statusFilter">
+                    <option value="All">All Statuses</option>
+                    <option value="Issued">Issued</option>
+                    <option value="Returned">Returned</option>
+                    <option value="Overdue">Overdue</option>
+                </select>
+
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue ID</th>
+                            <th>Member</th>
+                            <th>Book</th>
+                            <th>Issue Date</th>
+                            <th>Due Date</th>
+                            <th>Actual Return Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reportTableBody"></tbody>
+                </table>
+            </div>
+
+            <p id="reportCount">0 records</p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

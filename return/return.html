@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book - Digital Library</title>
+    <link rel="stylesheet" href="return.css">
+    <script src="return.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Return Book</h1>
+        <p>Manage issued and returned books</p>
+        <a href="../dashboard/dashboard.html">← Back to Dashboard</a>
+    </header>
+
+    <main>
+        <section class="return-container">
+            <h2>Issued Book Records</h2>
+            <p id="returnMessage" aria-live="polite"></p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Issue ID</th>
+                            <th>Member</th>
+                            <th>Book</th>
+                            <th>Issue Date</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="returnTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
